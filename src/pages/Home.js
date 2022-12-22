@@ -19,7 +19,7 @@ class Home extends Component {
     camera.position.z = 20;
 
     // Create a sphere for the ball
-    var ballGeometry = new THREE.SphereGeometry( 0.5, 64, 64 );
+    var ballGeometry = new THREE.SphereGeometry( 1, 64, 64 );
     var ballMaterial = new THREE.MeshStandardMaterial( { color: 0xff0000 } );
     var ball = new THREE.Mesh( ballGeometry, ballMaterial );
     scene.add( ball );
