@@ -58,7 +58,7 @@ class Home extends Component {
     <div className="absolute top-1/2 left-1/2 text-center -translate-x-1/2 -translate-y-1/2 z-0" ref={ref => (this.mount = ref)} />
     <div className="absolute top-1/2 left-1/2 text-center -translate-x-1/2 -translate-y-1/2">
       <div className="text-2xl md:text-5xl mb-3">HI,I'am <span className="text-textbase">Dheeraj</span></div>
-      <div className="text-xl md:text-xl mb-3">click to interact</div>
+      <div className="text-xl md:text-xl mb-3">swipe to interact</div>
       <Link className="btn bg-base hover:bg-navbar text-textbase"to="/about">about me</Link>
     </div>
     </>
