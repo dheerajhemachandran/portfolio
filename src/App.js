@@ -7,7 +7,7 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <div className="h-full bg-black text-slate-200">
+    <div className="text-slate-200">
       <BrowserRouter>
       <Navbar/>
 

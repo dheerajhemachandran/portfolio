@@ -6,8 +6,8 @@ const Navbar = () => {
   const path=useLocation().pathname
   const [hidden, sethidden] = useState(true)
   return (
-    <nav className="absolute top-5 left-5 rounded bg-navbar  w-fill p-4 lg:flex lg:justify-between z-10">
-      <div className='flex justify-between items-center'>
+    <nav className="absolute bg-navbar w-100 py-3 lg:px-36 lg:flex lg:justify-between z-10">
+      <div className='flex justify-between items-center mx-3'>
         <div className="me-5 pe-5 text-textbase">Dh.</div>
         <button className='lg:hidden' onClick={()=>sethidden(!hidden)}>
           {hidden?
