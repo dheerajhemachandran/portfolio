@@ -21,21 +21,21 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className='lg:flex gap-4 hidden'>
+      <div className='lg:flex gap-4 hidden items-center'>
         <Link to="/" className={path==='/'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>home</Link>
         <Link to="/about" className={path==='/about'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>about</Link>
         <Link to="/project" className={path==='/project'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>project</Link>
-        <Link to="/contact" className={path==='/contact'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>contact</Link>
+        <Link to="/contact" className={path==='/contact'?'bg-red-900 hover:bg-red-800 text-black px-2 py-1 rounded':'bg-red-500 hover:bg-red-700 text-black px-2 py-1 rounded'}>chat</Link>
       </div>
 
       {hidden?
       <></>
         : 
-      <div className='lg:hidden flex flex-col py-3 gap-3'>
+      <div className='lg:hidden flex flex-col p-3 gap-3'>
         <Link to="/" className={path==='/'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>home</Link>
         <Link to="/about" className={path==='/about'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>about</Link>
         <Link to="/project" className={path==='/project'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>project</Link>
-        <Link to="/contact" className={path==='/contact'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>contact</Link>
+        <Link to="/contact" className={path==='/contact'?'bg-red-900 hover:bg-red-800 text-black px-2 py-1 rounded w-fit':'bg-red-500 hover:bg-red-700 text-black px-2 py-1 rounded w-fit'}>chat</Link>
     </div>
         }
      
