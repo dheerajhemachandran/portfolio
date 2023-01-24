@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link,useLocation } from 'react-router-dom'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
   const path=useLocation().pathname
   const [hidden, sethidden] = useState(true)
   return (
-    <nav className="absolute bg-navbar w-100 py-3 lg:px-36 lg:flex lg:justify-between z-10">
+    <motion.nav initial={{y:-100}} animate={{y:0}} transition={{type:"spring"}} className="sticky top-0 w-4/5 bg-navbar p-3 flex justify-between z-10 m-5 rounded-lg">
       <div className='flex justify-between items-center mx-3'>
         <div className="me-5 pe-5 text-textbase">Dh.</div>
         <button className='lg:hidden' onClick={()=>sethidden(!hidden)}>
@@ -21,25 +22,25 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className='lg:flex gap-4 hidden items-center'>
+      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{ease:"easeIn",duration:1}} className='lg:flex gap-4 hidden items-center'>
         <Link to="/" className={path==='/'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>home</Link>
         <Link to="/about" className={path==='/about'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>about</Link>
         <Link to="/project" className={path==='/project'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>project</Link>
         <Link to="/contact" className={path==='/contact'?'bg-red-900 hover:bg-red-800 text-black px-2 py-1 rounded':'bg-red-500 hover:bg-red-700 text-black px-2 py-1 rounded'}>chat</Link>
-      </div>
+      </motion.div>
 
       {hidden?
       <></>
         : 
-      <div className='lg:hidden flex flex-col p-3 gap-3'>
+      <motion.div initial={{opacity:0,scale:0}} animate={{opacity:1,scale:1}} transition={{ease:"easeIn",duration:.2}} className='lg:hidden flex flex-col p-3 gap-3'>
         <Link to="/" className={path==='/'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>home</Link>
         <Link to="/about" className={path==='/about'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>about</Link>
         <Link to="/project" className={path==='/project'?'text-red-900 hover:text-red-800':'text-red-500 hover:text-red-700'}>project</Link>
         <Link to="/contact" className={path==='/contact'?'bg-red-900 hover:bg-red-800 text-black px-2 py-1 rounded w-fit':'bg-red-500 hover:bg-red-700 text-black px-2 py-1 rounded w-fit'}>chat</Link>
-    </div>
+    </motion.div>
         }
      
-    </nav>
+    </motion.nav>
   
 
 
