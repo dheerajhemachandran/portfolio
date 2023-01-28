@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 class Home extends Component {
+  
   componentDidMount() {
 
     var scene = new THREE.Scene();
@@ -53,14 +54,16 @@ class Home extends Component {
     };
 
     animate();
+    
   }
   render() {
+    
     return (
     <>
-    <div className="absolute top-1/2 left-1/2 text-center -translate-x-1/2 -translate-y-1/2 z-0" ref={ref => (this.mount = ref)} />
-    <div className="absolute top-1/2 left-1/2 text-center -translate-x-1/2 -translate-y-1/2">
-      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{ease:"easeIn",duration:.5}} className="text-2xl md:text-5xl mb-3">HI,I'am <span className="text-textbase">Dheeraj</span></motion.div>
-      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{ease:"easeIn",duration:1}} className="text-xl md:text-xl mb-3">swipe to interact</motion.div>
+    <div className="absolute top-1/2 left-1/2 text-center -translate-x-1/2 -translate-y-1/2 z-0 my-10" ref={ref => (this.mount = ref)} />
+    <div className="absolute top-1/2 left-1/2 text-center -translate-x-1/2 -translate-y-1/2 my-10">
+      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{ease:"easeIn",duration:.5}} className="text-md md:text-3xl mb-1">HI,I'am <span className="text-textbase">Dheeraj</span></motion.div>
+      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{ease:"easeIn",duration:1}} className="text-md md:text-xl mb-3">swipe to interact</motion.div>
       <Link className="btn bg-base hover:bg-navbar text-textbase"to="/about">about me</Link>
     </div>
     </>

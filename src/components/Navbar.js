@@ -7,10 +7,10 @@ const Navbar = () => {
   const path=useLocation().pathname
   const [hidden, sethidden] = useState(true)
   return (
-    <motion.nav initial={{y:-100}} animate={{y:0}} transition={{type:"spring"}} className="fixed top-0 w-100 p-3 z-10">
-      <div className='bg-navbar flex py-3 px-5 rounded-lg justify-between flex-col lg:flex-row '>
-      <div className='flex justify-between items-center mx-3'>
-        <div className="me-5 pe-5 text-textbase">Dh.</div>
+    <motion.nav initial={{y:-100}} animate={{y:0}} transition={{type:"spring"}} className="w-fit p-3 z-10">
+      <div className='bg-navbar flex py-3 px-2 rounded-lg flex-col lg:flex-row '>
+      <div className='flex justify-between mx-3'>
+        <div className="me-5 pe-5 text-xl text-textbase">Dh.</div>
         <button className='lg:hidden' onClick={()=>sethidden(!hidden)}>
           {hidden?
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

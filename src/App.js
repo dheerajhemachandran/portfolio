@@ -4,8 +4,20 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import React, { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    window.onresize = handleResize;
+    return () => {
+      window.onresize = null;
+    };
+  }, []);
+
+  const handleResize = () => {
+    // Refresh the page here
+    window.location.reload();
+  }
   return (
     <div className="text-slate-200 flex flex-col justify-center">
       <BrowserRouter>

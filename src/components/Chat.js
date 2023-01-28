@@ -9,6 +9,7 @@ const Chat = ({owner,message}) => {
             {owner==="Selina"?
             <Typewriter
             options={{
+              typeSpeed:5000,
               strings: message,
               autoStart: true,
             }}

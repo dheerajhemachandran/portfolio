@@ -3,7 +3,7 @@ import {useState} from 'react'
 import Chat from '../components/Chat'
 
 const Contact = () => {
-  const [message, setmessage] = useState([])
+  const [message, setmessage] = useState([{name:"Selina",message:'try=> "who is dheeraj",  "his projects",  "tell about him" '}])
 
   const handlesubmit=(e)=>{
       e.preventDefault()

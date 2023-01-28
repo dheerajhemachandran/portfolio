@@ -31,7 +31,7 @@ const About = () => {
   }, [refresh])
 
   return (
-    <div id="about" className='py-32 px-3'>
+    <div id="about" className='py-10 px-3'>
 
       <div className="bg-base flex justify-center flex-col gap-3 px-4 sm:mx-3 lg:mx-40 lg: pt-4 rounded">
       <button className='btn text-textbase mx-auto' onClick={()=>setrefresh(refresh+1)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
