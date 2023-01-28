@@ -7,12 +7,12 @@ import { getDatabase } from "firebase/database";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAY8Sx-ukV_Rnxt_lyyDBMLd5QB6Exb3nM",
+  apiKey: process.env.REACT_APP_APIKEY,
   authDomain: "portfolio-54b61.firebaseapp.com",
   databaseURL: "https://portfolio-54b61-default-rtdb.firebaseio.com",
   projectId: "portfolio-54b61",
   storageBucket: "portfolio-54b61.appspot.com",
-  messagingSenderId: "318923451671",
+  messagingSenderId: process.env.REACT_APP_MSGSID,
   appId: "1:318923451671:web:d6a5e2fdaf18aeef6e9b52",
   measurementId: "G-316SLTH2EH"
 };

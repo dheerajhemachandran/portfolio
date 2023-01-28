@@ -50,7 +50,8 @@ const About = () => {
       I've always been fascinated by the potential of AI and the web to change the world, and I love exploring new technologies and ways to apply them to real-world problems. In my free time, I enjoy <span className="text-red-500">gaming</span>.
       I have worked on several projects in the past. I am always looking for new opportunities to work on interesting and challenging projects.
       <br />
-      <Link to="/project" className="btn mt-5 bg-red-500 hover:bg-red-600 text-white" >Projects</Link>
+      <Link to="/project" className="btn mt-5 bg-red-500 hover:bg-red-600 text-white mr-2" >Projects</Link>
+      <a className='bg-red-500 hover:bg-red-600 btn mt-5 text-white' href="https://firebasestorage.googleapis.com/v0/b/portfolio-54b61.appspot.com/o/Dheeraj's%20Resume%20(2).pdf?alt=media&token=3f6cdb4a-ba51-444c-83da-262225f6a516" target="__blank">Resume</a>
       </div>
       </div>
 

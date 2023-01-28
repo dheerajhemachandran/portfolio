@@ -32,6 +32,7 @@ const Projects = () => {
         {"loading projects from firebase realtime database..."}
         </div>}
         </div>
+        
 
     </div>
   )
