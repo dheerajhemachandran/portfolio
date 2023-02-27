@@ -9,7 +9,7 @@ const Navbar = ({section,dark,setdark}) => {
     <>
 
       
-      <button className='fixed bottom-0 left-0 flex items-center m-5 p-2 z-20 bg-gray-900 dark:bg-slate-200 w-[60px] rounded-2xl' onClick={()=>setdark(!dark)}>
+      <button className='fixed bottom-0 left-0 flex items-center m-5 p-2 z-20 bg-gray-900 dark:bg-slate-200 w-[60px] rounded-3xl' onClick={()=>setdark(!dark)}>
       <motion.div  animate={{ x: dark ? 20: 0 }}>{dark===false? <DarkIcon dark={dark} /> : <LightIcon dark={dark}/>}</motion.div>
       </button>
 
@@ -25,9 +25,13 @@ const Navbar = ({section,dark,setdark}) => {
 
       <div className='fixed right-0 justify-center h-screen md:flex flex-col gap-4 pr-10 hidden'>     
       {section==="home"?
-      <button class="border-2 border-purple-800 bg-purple-800 dark:border-red-800 dark:bg-red-800 text-white font-bold p-2 rounded-full">
+      <Link 
+      to="home"
+      smooth={true}
+      duration={500}
+      class="border-2 cursor-pointer border-purple-800 bg-purple-800 dark:border-red-800 dark:bg-red-800 text-white font-bold p-2 rounded-full">
           <circle cx="10" cy="10" r="9" />
-      </button>:
+      </Link>:
       <Link 
       to="home"
       smooth={true}
@@ -37,9 +41,13 @@ const Navbar = ({section,dark,setdark}) => {
       </Link>}
 
     {section==="about"?
-      <button class="border-2 border-purple-800 bg-purple-800 dark:border-red-800 dark:bg-red-800 text-white font-bold p-2 rounded-full">
+       <Link 
+       to="about"
+       smooth={true}
+       duration={500}
+       class="border-2 border-purple-800 cursor-pointer bg-purple-800 dark:border-red-800 dark:bg-red-800 text-white font-bold p-2 rounded-full">
           <circle cx="10" cy="10" r="9" />
-      </button>:
+      </Link>:
       <Link 
       to="about"
       smooth={true}
@@ -49,9 +57,13 @@ const Navbar = ({section,dark,setdark}) => {
     </Link>}
 
     {section==="skills"?
-      <button class="border-2 border-purple-800 bg-purple-800 dark:border-red-800 dark:bg-red-800 text-white font-bold p-2 rounded-full">
+      <Link 
+      to="skills"
+      smooth={true}
+      duration={500}
+       class="border-2 cursor-pointer border-purple-800 bg-purple-800 dark:border-red-800 dark:bg-red-800 text-white font-bold p-2 rounded-full">
           <circle cx="10" cy="10" r="9" />
-      </button>:
+      </Link>:
       <Link 
       to="skills"
       smooth={true}
@@ -61,9 +73,13 @@ const Navbar = ({section,dark,setdark}) => {
     </Link>}
 
     {section==="projects"?
-      <button class="border-2 border-purple-800 bg-purple-800 dark:border-red-800 dark:bg-red-800 text-white font-bold p-2 rounded-full">
+     <Link 
+     to="projects"
+     smooth={true}
+     duration={500}
+     class="cursor-pointer border-2 border-purple-800 bg-purple-800 dark:border-red-800 dark:bg-red-800 text-white font-bold p-2 rounded-full">
           <circle cx="10" cy="10" r="9" />
-      </button>:
+      </Link>:
       <Link 
       to="projects"
       smooth={true}
@@ -73,9 +89,13 @@ const Navbar = ({section,dark,setdark}) => {
     </Link>}
 
     {section==="contact"?
-      <button class="border-2 border-purple-800 bg-purple-800 dark:border-red-800 dark:bg-red-800 text-white font-bold p-2 rounded-full">
+      <Link 
+      to="contact"
+      smooth={true}
+      duration={500}
+       class="cursor-pointer border-2 border-purple-800 bg-purple-800 dark:border-red-800 dark:bg-red-800 text-white font-bold p-2 rounded-full">
           <circle cx="10" cy="10" r="9" />
-      </button>:
+      </Link>:
       <Link 
       to="contact"
       smooth={true}
