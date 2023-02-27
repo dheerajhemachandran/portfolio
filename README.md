@@ -1,6 +1,6 @@
 # Portfolio website
-I built this using Reactjs and Tailwindcss.
-also uses firbase to get data of the projects i make.
+Built with Reactjs and Tailwindcss.
+Also uses firbase to get data of the projects i make.
 
 ### Task list:
 
