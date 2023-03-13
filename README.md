@@ -6,5 +6,8 @@ Also uses firbase to get data of the projects i make.
 
 - [x] skills section
 - [x] project card 
-- [ ] contact
+- [ ] contact firebase setup
+- [ ] about pic
+- [ ] game implimentation
 - [ ] animations
+
